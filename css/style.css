@@ -1,0 +1,149 @@
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+}
+
+body {
+  overflow-x: hidden;
+  padding-top: 50px;
+  /* padding-bottom: 250px; */
+}
+
+#image1 {
+  width: 135px;
+}
+
+.image-pop img {
+  transition: all 0.5s ease;
+}
+
+.image-pop img:hover {
+  transform: scale(1.2);
+}
+
+.socials {
+  margin: -15px;
+}
+
+.carousel {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#keyboardimg {
+  animation-name: keyboard;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes keyboard {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* footer {
+  position: absolute;
+  margin-top: 70px !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+} */
+
+.modetoggle {
+  font-size: 28px;
+  border-radius: 100px;
+  background-color: #111111;
+  padding: 15px;
+  color: #fcfcfc;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  position: fixed;
+  top: 10%;
+  right: 4%;
+
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.fa-moon-o:before {
+  padding: 0 2px;
+}
+
+.fa-sun-o {
+  background-color: #212121;
+  color: #ccc;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.item:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item__content {
+  background-color: steelblue;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 7rem;
+  border-radius: 7px;
+}
+
+.item > p {
+  text-align: center;
+}
+
+.left {
+  transform-origin: center;
+  transform: translateX(-50%);
+}
+
+.right {
+  transform-origin: center;
+  transform: translateX(50%);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
+.card {
+  width: 800px;
+}
